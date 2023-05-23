@@ -5,14 +5,15 @@ function getRandomHexColor() {
 }
 
 const body = document.querySelector('.widget');
+const bodyEl = document.querySelector("body");
 
 body.addEventListener('click', changingBack);
 
 function changingBack(event) {
   const bodyColor = event.currentTarget;
-  bodyColor.style.backgroundColor = getRandomHexColor(body);
+  bodyEl.style.backgroundColor = getRandomHexColor();
   const span = document.querySelector(".color");
-  span.textContent = getRandomHexColor(body);
+  span.textContent = getRandomHexColor();
 }
   
 
