@@ -12,7 +12,7 @@ function submitingForm(event) {
     if (data.email !== '' && data.password !== '') {
         console.log(data);
     } else if (data.email === '' || data.password === "") {
-        window.alert('Please fill in all the fields!');
+       return window.alert('Please fill in all the fields!');
     }
     event.currentTarget.reset();
 }
